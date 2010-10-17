@@ -23,7 +23,9 @@
 
 <div class="messages">
 	{% for message in messages %}
-	<span class="message">message.text</span>
+	<div>
+		<span class="message">{{message.text}}</span>
+	</div>
 	{% endfor %}
 </div>
 
