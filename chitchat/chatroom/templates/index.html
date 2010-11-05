@@ -4,20 +4,14 @@
 
 <div class="messageForm">
 	<form name="message" method="POST" action="">
-		<table>
+		<div>
 			{% if form.message.errors %}
-			<tr>
-				<td>{{form.message.errors}}</td>
-			</tr>
+			<div class="error">{{form.message.errors}}</div>
 			{% endif %}
-			<tr>
-				<td class="messageBox">{{form.text}}</td>
-			</tr>
-			<tr>
-				<td><input type="submit" name="submit"
-					value="send"></input></td>
-			</tr>
-		</table>
+				<input class="messageBox" type="text" id="id_text" name="text" maxlength="240" ></input>
+				<input type="submit" name="submit"
+					value="send"></input>
+		</div>
 	</form>
 </div>
 

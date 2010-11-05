@@ -13,7 +13,8 @@ def index(request):
 		if form.is_valid():
 			message = form.save()
 	else:
-		form = MessageForm()
+		pass
+	form = MessageForm()
 	
 	messages = Message.objects.all()
 	if len(messages)>30:
